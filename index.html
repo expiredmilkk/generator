@@ -39,14 +39,14 @@
         #main {
             width: 600px;
             margin: auto;
-            font-size: 16px;
+            font-size: 12px;
         }
 
-        #person1 {
+        #pera {
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 250px 0px 0px 130px;
+            margin: 100px 0px 0px 130px;
             width: 150px;
             padding: 5px;
             background: #fff;
@@ -58,11 +58,11 @@
             text-align: center;
         }
 
-        #person2 {
+        #perb {
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 250px 0px 0px 310px;
+            margin: 100px 0px 0px 320px;
             width: 150px;
             padding: 5px;
             background: #fff;
@@ -74,13 +74,13 @@
             text-align: center;
         }
 
-        #genbutt {
+        #go {
             font-family: poppins;
             font-size: 12px;
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 300px 0px 0px 235px;
+            margin: 150px 0px 0px 235px;
             width: 120px;
             padding: 5px 5px 5px 5px;
             background: #fff;
@@ -94,21 +94,22 @@
             user-select: none;
         }
 
-        #genbutt:hover {
+        #go:hover {
             margin: 301px 0px 0px 236px;
             background: #cab1da;
             color: #000;
         }
 
-        #shitbox {
+        #promptbox {
             font-family: poppins; 
+            color: #ababab;
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
             text-align:center;
             padding: 20px;
             background: #fff;
-            margin: 350px 0px 300px 130px;
+            margin: 200px 0px 300px 130px;
             width: 300px;
             font-size: 12px;
         }
@@ -1210,25 +1211,25 @@
       
           function clear1() {
 
-        document.getElementById("person1").value = "";
-        document.getElementById("person1").style.fontStyle = "normal";
+        document.getElementById("pera").value = "";
+        document.getElementById("pera").style.fontStyle = "normal";
     }
 
     function clear2() {
 
-        document.getElementById("person2").value = "";
-        document.getElementById("person2").style.fontStyle = "normal";
+        document.getElementById("perb").value = "";
+        document.getElementById("perb").style.fontStyle = "normal";
     }
     
     
     var A, B;
     var str; 
     
-     function fluff() {
+     function prompt() {
 
         // Get names of OTP
-        A = document.getElementById("person1").value;
-        B = document.getElementById("person2").value;
+        A = document.getElementById("pera").value;
+        B = document.getElementById("perb").value;
 
         // Get random prompt
         var R1 = Math.floor(Math.random() * prompts.length);
@@ -1257,13 +1258,13 @@
 
     <div id="main">
 
-        <form><input type="text" name="otp1" value="Person A" id="person1" onfocus="clear1()"></form>
-        <form><input type="text" name="otp2" value="Person B" id="person2" onfocus="clear2()"></form>
-        <div id="genbutt" onclick="fluff()">Generate</div>
+        <form><input type="text" name="otp1" value="Person A" id="pera" onfocus="clear1()"></form>
+        <form><input type="text" name="otp2" value="Person B" id="perb" onfocus="clear2()"></form>
+        <div id="go" onclick="prompt()">Go!</div>
         
 
-        <div id="shitbox">
-            <b>Your prompt:</b>
+        <div id="promptbox">
+            <b>RANDOM PROMPT</b>
             <br><br>
             <span id="prompt"></span>
             <br><br><br>
