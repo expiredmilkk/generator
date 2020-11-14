@@ -46,10 +46,10 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 100px 0px 0px 130px;
+            margin: 210px 0px 0px 130px;
             width: 150px;
             padding: 5px;
-            background: #fff;
+            background: transparent;
             font-family: Poppins;
             font-size: 12px;
             color: #ababab;
@@ -62,10 +62,10 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 100px 0px 0px 320px;
+            margin: 210px 0px 0px 320px;
             width: 150px;
             padding: 5px;
-            background: #fff;
+            background: transparent;
             font-family: poppins;
             font-size: 12px;
             color: #ababab;
@@ -80,10 +80,10 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 150px 0px 0px 235px;
+            margin: 260px 0px 0px 235px;
             width: 120px;
             padding: 5px 5px 5px 5px;
-            background: #fff;
+            background: transparent;
             cursor: pointer;
             color: #ababab;
             font-weight: bold;
@@ -95,7 +95,7 @@
         }
 
         #go:hover {
-            margin: 301px 0px 0px 236px;
+            margin: 261px 0px 0px 236px;
             background: #cab1da;
             color: #000;
         }
@@ -108,9 +108,10 @@
             border: 1px solid #e2e2e2;
             text-align:center;
             padding: 20px;
-            background: #fff;
-            margin: 200px 0px 300px 130px;
+            background: transparent;
+            margin: 310px 0px 300px 130px;
             width: 300px;
+            height:300px;
             font-size: 12px;
         }
 
@@ -120,6 +121,29 @@
           letter-spacing: 0.05em;
           word-spacing: 0.015em;
           line-height: 150%;
+        }
+        
+        #top {
+            font-family: poppins; 
+            color: #ababab;
+            position: absolute;
+            border-radius: 5px;
+            border: 1px solid #e2e2e2;
+            text-align:center;
+            padding: 20px;
+            background: transparent;
+            margin: 95px 0px 300px 437px;
+            width: 300px;
+            height: 50px;
+            font-size: 12px;
+        }
+        
+        #top a {
+            color: #cab1da;
+        }
+        
+        #top a:hover {
+            color: #000;
         }
 
         #thanks {
@@ -1256,10 +1280,14 @@
 
 <body>
 
+    <div id="top">
+        <b> PROMPT GENERATOR BY SUNHYUCK</b><br>WARNING: May contain NSFW prompts<br><b><i><a href="https://sunhyuck.tumblr.com">blog</a></i> ♡ <i><a href="https://sunhyuck.tumblr.com/submit">submit a prompt</a></i> ♡ <i><a href="https://ko-fi.com/sunhyuck">ko-fi</a></i></b>
+    </div>
+
     <div id="main">
 
-        <form><input type="text" name="otp1" value="Person A" id="pera" onfocus="clear1()"></form>
-        <form><input type="text" name="otp2" value="Person B" id="perb" onfocus="clear2()"></form>
+        <form><input type="text" name="otp1" value="Input Name A" id="pera" onfocus="clear1()"></form>
+        <form><input type="text" name="otp2" value="Input Name B" id="perb" onfocus="clear2()"></form>
         <div id="go" onclick="prompt()">Go!</div>
         
 
@@ -1267,10 +1295,7 @@
             <b>RANDOM PROMPT</b>
             <br><br>
             <span id="prompt"></span>
-            <br><br><br>
-            <div id="thanks"></div>
-            <br <="" div="">
-        
+            
         
 
 
