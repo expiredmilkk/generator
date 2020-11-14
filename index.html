@@ -20,7 +20,7 @@
         }
 
         a {
-            color: #a3a3a3;
+            color: #fdfdfd;
             text-decoration: none;
         }
 
@@ -49,7 +49,7 @@
             margin: 200px 0px 0px 130px;
             width: 150px;
             padding: 5px;
-            background: transparent;
+            background: #fff;
             font-family: Poppins;
             font-size: 12px;
             color: #ababab;
@@ -65,7 +65,7 @@
             margin: 200px 0px 0px 285px;
             width: 150px;
             padding: 5px;
-            background: transparent;
+            background: #fff;
             font-family: poppins;
             font-size: 12px;
             color: #ababab;
@@ -83,7 +83,7 @@
             margin: 200px 0px 0px 460px;
             width: 30px;
             padding: 5px 5px 5px 5px;
-            background: transparent;
+            background: #fff;
             cursor: pointer;
             color: #ababab;
             font-weight: bold;
@@ -108,7 +108,7 @@
             border: 1px solid #e2e2e2;
             text-align:center;
             padding: 20px;
-            background: transparent;
+            background: #fff;
             margin: 250px 0px 0px 50px;
             width: 500px;
             font-size: 12px;
@@ -121,33 +121,22 @@
           word-spacing: 0.015em;
           line-height: 150%;
         }
+    
         
-        #top {
-            font-family: poppins; 
-            color: #ababab;
-            position: absolute;
-            border-radius: 5px;
-            border: none;
-            text-align:center;
-            padding: 20px;
-            background: transparent;
-            margin: 100px 0px 300px 900px;
-            width: 300px;
-            height: 50px;
-            font-size: 12px;
-        }
-        
-        #top a {
-            color: #cab1da;
-        }
-        
-        #top a:hover {
-            color: #000;
-        }
+        .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #cab1da;
+  color: white;
+  text-align: center;
+}
 
-        #thanks {
-            font-style: oblique;
-            float: left;
+        #txt {
+            font-style: none;
+            float: center;
             font-size: 12px;
         }
 
@@ -1279,9 +1268,7 @@
 
 <body>
 
-    <div id="top">
-        <b> PROMPT GENERATOR BY SUNHYUCK</b><br>WARNING: May contain NSFW prompts<br><b><i><a href="https://sunhyuck.tumblr.com">blog</a></i> ♡ <i><a href="https://sunhyuck.tumblr.com/submit">submit a prompt</a></i> ♡ <i><a href="https://ko-fi.com/sunhyuck">ko-fi</a></i></b>
-    </div>
+    
 
     <div id="main">
 
@@ -1289,13 +1276,21 @@
         <form><input type="text" name="otp2" value="Input Name B" id="perb" onfocus="clear2()"></form>
         <div id="go" onclick="prompt()">Go!</div>
         
-
         <div id="promptbox">
             <b>RANDOM PROMPT</b>
+            <br><small>WARNING: May contain NSFW prompts</small><br>
             <br><br>
             <span id="prompt"></span>
             
         
+<div class="footer">
+  <p><br><b> PROMPT GENERATOR - 2020 SUNHYUCK</b><br><b><i><a href="https://sunhyuck.tumblr.com">blog</a></i> ♡ <i><a href="https://sunhyuck.tumblr.com/submit">submit a prompt</a></i> ♡ <i><a href="https://ko-fi.com/sunhyuck">ko-fi</a></i></b></p>
+  
+  <script language="JavaScript">var fhsh = document.createElement('script');var fhs_id_h = "3356458";
+fhsh.src = "//freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=Visits&a=1";
+document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
+</script>
 
+</div>
 
 </div></div></body></html>
