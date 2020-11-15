@@ -46,7 +46,7 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 200px 0px 0px 20px;
+            margin: 200px 0px 0px 130px;
             width: 150px;
             padding: 5px;
             background: #fff;
@@ -62,23 +62,7 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 200px 0px 0px 180px;
-            width: 150px;
-            padding: 5px;
-            background: #fff;
-            font-family: poppins;
-            font-size: 12px;
-            color: #343434;
-            line-height: 12px;
-            font-style: italic;
-            text-align: center;
-        }
-        
-        #perc {
-            position: absolute;
-            border-radius: 5px;
-            border: 1px solid #e2e2e2;
-            margin: 200px 0px 0px 340px;
+            margin: 200px 0px 0px 285px;
             width: 150px;
             padding: 5px;
             background: #fff;
@@ -96,7 +80,7 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 200px 0px 0px 570px;
+            margin: 200px 0px 0px 455px;
             width: 30px;
             padding: 5px 5px 5px 5px;
             background: #fff;
@@ -203,14 +187,8 @@
         document.getElementById("perb").style.fontStyle = "normal";
     }
     
-    function clear3() {
-
-        document.getElementById("perc").value = "";
-        document.getElementById("perc").style.fontStyle = "normal";
-    }
     
-    
-    var A, B, C;
+    var A, B;
     var str; 
     
      function prompt() {
@@ -218,14 +196,13 @@
         // Get names of OTP
         A = document.getElementById("pera").value;
         B = document.getElementById("perb").value;
-        C = document.getElementById("perc").value;
 
         // Get random prompt
         var R1 = Math.floor(Math.random() * prompts.length);
         str = prompts[R1] 
 
-        // Replace {A} & {B} & {C} in prompt with OTP names
-        var result = str.replace(/{A}/g, A).replace(/{B}/g, B).replace(/{C}/g, C);
+        // Replace {A} & {B} in prompt with OTP names
+        var result = str.replace(/{A}/g, A).replace(/{B}/g, B);
         document.getElementById("prompt").innerHTML = result;
     }
     
@@ -251,12 +228,11 @@
 
         <form><input type="text" name="otp1" value="A" id="pera" onfocus="clear1()"></form>
         <form><input type="text" name="otp2" value="B" id="perb" onfocus="clear2()"></form>
-        <form><input type="text" name="otp3" value="C" id="perc" onfocus="clear3()"></form>
         <div id="go" onclick="prompt()">Go!</div>
         
         <div id="promptbox">
             <b>RANDOM PROMPT</b>
-            <br><small>FLUFF & ANGST ONLY. VISIT <a href="">HERE</a> FOR NSFW PROMPT GENERATOR.</small><br><small>NOTE: C WILL ONLY APPEAR FOR PROMPTS WITH THREE CHARACTERS (EG. LOVE TRIANGLE PROMPT)</small><br>
+            <br><small>FLUFF & ANGST ONLY. VISIT <a href="">HERE</a> FOR NSFW PROMPT GENERATOR.</small><br>
             <br><br>
             <span id="prompt"></span>
             
