@@ -137,8 +137,8 @@
     <script type="text/javascript">
 
         var prompts = [
-            "<strong>{B}</strong>: You never listen to me.",
-            "<strong>{A}</strong>: Have I told you this before?",
+            "<strong>{B}</strong>: You never listen to me, <strong>{A}</strong>.",
+            "<strong>{A}</strong>: <strong>{B}</strong>? Have I told you this before?",
             "<strong>{B}</strong>: Did you get my note?<br><strong>{A}</strong>: Of course I did. You taped it on my forehead while I was sleeping.",
             "<strong>{B}</strong>:I'm gonna do the thing <br><strong>{A}</strong>:That's probably a bad idea <br><strong>{B}</strong>:*does the thing* <br><strong>{A}</strong>:holyshit.",
             "<strong>{A}</strong>: FIGHT ME <br><strong>{B}</strong>: Unfortunately, I have a rule against battling children",
@@ -148,9 +148,16 @@
             "<strong>{B}</strong>: Good morning. No, don't get up, it's raining, let's stay in bed a little longer...",
             "<strong>{A}</strong>: I wish I never met you.",
             "<strong>{A}</strong>: Which part of me wasn't enough?",
-            
             "<strong>{B}</strong>: Are you flirting with me?",
+            "<strong>{B}</strong>: Do you ever care about my feelings?",
+            "<strong>{A}</strong>: Do you ever think about me?",
+            "<strong>{B}</strong>: Don't you dare look back.",
+            "<strong>{B}</strong>: But I love your *insert insecurity,* it makes you you.",
             "<strong>{B}</strong>: Why are you wearing my hoodie? Take that off!<br><strong>{A}</strong>: No!",
+            "<strong>{A}</strong>: When were you planning to tell me about this?",
+            "<strong>{A}</strong>: Excuse me! I was a superhero for ten whole minutes!<br><strong>{B}</strong>: And in that time you got kidnapped and we had to come to the rescue.",
+            "<strong>{A}</strong>: We're getting a divorce!<br><strong>{B}</strong>: We aren't married...",
+            "<strong>{B}</strong>: No kiss, no entry for <strong>{A}</strong>!"
             
             "<strong>{A}</strong> and <strong>{B}</strong> accidentally take each other’s luggage from baggage claim because they have similar looking bags. They each must use the items in the bags to help them find who they belong to and get their own luggage back.",
             "<strong>{A}</strong>is leaving for their vacation and meets <strong>{B}</strong> (a stranger) on the airplane. At the end of the trip, <strong>{A}</strong> boards their flight home only to realize that the person in the seat next to them is <strong>{B}</strong> again.",
@@ -170,8 +177,42 @@
             "<strong>{A}</strong> works in a grocery store. <strong>{B}</strong> is completely enraged by the lack of some sort of fruit and <strong>{A}</strong> tries to explain that they’re out of season.",
             "<strong>{A}</strong> and <strong>{B}</strong> who ended up on the kiss cam at a sporting event.",
             "<strong>{B}</strong> pressing their forehead against <strong>{A}</strong>'s forehead to check if they have a fever.",
-            "<strong>{B}</strong> lightly brushing <strong>{A}</strong>’s hair out of their eyes"
-
+            "<strong>{B}</strong> lightly brushing <strong>{A}</strong>’s hair out of their eyes",
+            "<strong>{A}</strong> and <strong>{B}</strong> having a bubble bath together.",
+            "<strong>{A}</strong> keeps winning against <strong>{B}</strong> at various board games and <strong>{B}</strong> is a sore loser.",
+            "<strong>{B}</strong> was orphaned at a young age and doesn’t know their exact birth date so <strong>{B}</strong> treats them like every day is their birthday just in case.",
+            "<strong>{B}</strong> taking photographs of <strong>{A}</strong>.",
+            "Fortune Teller!<strong>{A}</strong> reads <strong>{B}</strong>'s palm and discovers that the two of them are soulmates.",
+            "<strong>{B}</strong> forcing <strong>{A}</strong> to wear matching shirts with them.",
+            "<strong>{B}</strong> and <strong>{A}</strong> acting cupid for two friends but they fall in love with each other instead.",
+            "<strong>{B}</strong> is a cupid and they shot <strong>{A}</strong> but the first person <strong>{A}</strong> sees after getting shot is <strong>{B}</strong> and <strong>{A}</strong> falls in love with them.",
+            "Power outage during a snow storm so <strong>{A}</strong> and <strong>{B}</strong> must cuddle for warmth.",
+            "<strong>{B}</strong> and <strong>{A}</strong> are each other's first loves and first exes and they end up in an arranged marriage.",
+            "<strong>{B}</strong>'s drunk confession of their love for <strong>{A}</strong>.",
+            "<strong>{A}</strong> and <strong>{B}</strong> adopting a pet and fighting over what they should name it.",
+            "<strong>{A}</strong> and <strong>{B}</strong> arguing about the existence of aliens.",
+            "The two are the biggest rivals, and <strong>{A}</strong> has hydrokinesis and <strong>{B}</strong> has pyrokinesis.",
+            "<strong>{B}</strong> accidentally reads <strong>{A}</strong>'s diary.",
+            "<strong>{A}</strong> and <strong>{B}</strong> are childhood friends who promised that if they're still single after graduating college, they'd date each other.",
+            "<strong>{A}</strong> discovers that <strong>{B}</strong> is a vampire and <strong>{B}</strong> is amused that <strong>{A}</strong> is not scared.",
+            "Guardian Faerie!<strong>{B}</strong> is angered after <strong>{A}</strong> did something around their land that violates the laws of the guardians so they punish <strong>{A}</strong> but <strong>{A}</strong> ends up having a crush on the Faerie.",
+            "<strong>{A}</strong> reveal to <strong>{B}</strong> for the first time that they can shapeshift.",
+            "<strong>{A}</strong> wants to use their laptop on the couch, but <strong>{B}</strong> always occupies the space in their lap.",
+            "A puppy follows <strong>{A}</strong> home, and <strong>{A}</strong> can't bear to part with it. <strong>{A}</strong> brings the puppy inside and tries to hide it from <strong>{B}</strong>.",
+            "<strong>{B}</strong> bakes <strong>{A}</strong> cookies out of love. Unfortunately <strong>{A}</strong> is pretty sure these cookies are a biohazard."
+            "<strong>{A}</strong> and <strong>{B}</strong> keeps on getting paired on projects although they are polar opposites, but <strong>{A}</strong> can't deny that their partner is very cute.",
+            "<strong>{A}</strong> is a new student and everyone is giving them attention except for <strong>{B}</strong> and it irks <strong>{A}</strong> so they do things to get <strong>{B}</strong>'s attention.",
+            "<strong>{B}</strong> is a demon who is assigned to make <strong>{A}</strong> suffer but the latter is too nice with a bit too much problems in life so instead of making their life more misserable, <strong>{B}</strong> makes them feel better instead and becomes a guardian...demon...?",
+            "<strong>{A}</strong> can't finish their homework because <strong>{B}</strong> keeps on bothering them with nonsense.",
+            "<strong>{A}</strong> is asked to dance by their most hated person, <strong>{B}</strong>, during a masquerade ball.",
+            "<strong>{A}</strong> is the ghost producer behind one of the biggest music companies of the industry and <strong>{B}</strong> just got into the company as an artist and is determined to find out who this producer is.",
+            "<strong>{A}</strong> wants a cat. <strong>{B}</strong> buys a kitty-ear headband and tries to be cute.",
+            "<strong>{A}</strong> doesn't like talking on the phone, but <strong>{B}</strong> always calls them instead of texting. <strong>{B}</strong> admits that it's because they want to hear <strong>{A}</strong>'s voice."
+            "<strong>{A}</strong> kills <strong>{B}</strong> in a video game and <strong>{B}</strong> is ready to end their friendship.",
+            "<strong>{A}</strong> having hate at first sight with <strong>{B}</strong> not knowing they are soulmates.",
+            "<strong>{B}</strong> is frustrated because they want to kiss <strong>{A}</strong> but is shy and nervous because they only started dating last week.",
+            "<strong>{B}</strong> thinks they're making their actions of love for their crush, <strong>{A}</strong>, subtle enough but <strong>{A}</strong> actually thinks they're being obvious and finds it cute.",
+            
         ]
       
           function clear1() {
