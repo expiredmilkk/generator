@@ -47,7 +47,7 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 200px 0px 0px 130px;
+            margin: 200px 0px 0px 10px;
             width: 150px;
             padding: 5px;
             background: #fff;
@@ -63,7 +63,7 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 200px 0px 0px 285px;
+            margin: 200px 0px 0px 170px;
             width: 150px;
             padding: 5px;
             background: #fff;
@@ -81,7 +81,7 @@
             position: absolute;
             border-radius: 5px;
             border: 1px solid #e2e2e2;
-            margin: 200px 0px 0px 455px;
+            margin: 200px 0px 0px 465px;
             width: 30px;
             padding: 5px 5px 5px 5px;
             background: #fff;
@@ -96,7 +96,7 @@
         }
 
         #go:hover {
-            margin: 201px 0px 0px 456px;
+            margin: 200px 0px 0px 466px;
             background: #cab1da;
             color: #000;
         }
@@ -121,6 +121,28 @@
           letter-spacing: 0.05em;
           word-spacing: 0.015em;
           line-height: 150%;
+        }
+        
+        #swap { 
+          font-family: Poppins; 
+          font-weight:bold;
+          position: absolute; 
+          border-radius: 5px; 
+          border: 1px solid #e2e2e2; 
+          margin: 200px 0px 0px 520px; 
+          width: 85px; 
+          padding: 5px 5px 5px 5px; 
+          background: #fff; 
+          cursor: pointer; 
+          text-align: center; 
+          -webkit-user-select: none; 
+          -moz-user-select: none; 
+          -ms-user-select: none; 
+          user-select: none; 
+        
+        }
+        
+        #swap:hover { margin: 601px Opx Opx 601px; background: #cab1da; 
         }
     
         #txt {
@@ -266,6 +288,7 @@ function clear1() {
         <form><input type="text" name="otp1" value="A" id="pera" onfocus="clear1()"></form>
         <form><input type="text" name="otp2" value="B" id="perb" onfocus="clear2()"></form>
         <div id="go" onclick="prompt()">Go!</div>
+        <div id="swap" onclick="swapname()">Swap A & B</div>
         
         <div id="promptbox">
             <b>RANDOM PROMPT</b>
